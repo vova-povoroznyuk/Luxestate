@@ -1,26 +1,26 @@
 .search {
-  display: flex;
-  width: 100%;
-  max-width: 48em;
+    display: flex;
+    width: 100%;
+    max-width: 48em;
 }
 .search__input {
-  border: none;
-  border-radius: inherit;
-  width: 100%;
-  background: transparent;
+    width: 100%;
+    border: none;
+    border-radius: inherit;
+    background: transparent;
 }
 .search__input-wrapper {
-  flex-grow: 1;
-  padding: 3em 1.5em 3em 6em;
-  background-image: url('../img/svg/search.svg');
-  background-repeat: no-repeat;
-  background-position: 3em 50%;
+    flex-grow: 1;
+    padding: 3em 1.5em 3em 6em;
+    background-image: url("../img/svg/search.svg");
+    background-repeat: no-repeat;
+    background-position: 3em 50%;
 }
 .search__submit {
-  border: none;
-  border-radius: inherit;
-  background-color: #ffcc01;
-  padding: 3em;
-  max-width: 11.6em;
-  flex-grow: 1;
+    flex-grow: 1;
+    max-width: 11.6em;
+    border: none;
+    padding: 3em;
+    border-radius: inherit;
+    background-color: #ffcc01;
 }

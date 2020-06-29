@@ -1,0 +1,60 @@
+.hero {
+    position: relative;
+}
+.hero__avatar {
+    width: calc(100% - 10em);
+    padding-top: 82%;
+    margin-left: auto;
+    background-color: #96bece;
+}
+.search-wrapper {
+    margin-top: 5em;
+    background: #ffffff;
+}
+.hero__title {
+    position: absolute;
+    top: 15em;
+    left: 0;
+}
+.hero__info {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.info__btn {
+    position: relative;
+    border: none;
+    padding: 3.2em 5.6em 3.2em  11.5em;
+    background-color: #ffcc01;
+}
+.info__icon {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 5.8em;
+    height: fit-content;
+    margin: auto;
+    img {
+        width: auto;
+    }
+}
+.scroll-down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.scroll-down__title {
+    transform: rotate(180deg);
+    margin-bottom: 1.2em;
+    p {
+        writing-mode: tb-rl;
+    }
+}
+.scroll-down__arrow {
+  
+    img {
+        width: auto;
+    }
+}
