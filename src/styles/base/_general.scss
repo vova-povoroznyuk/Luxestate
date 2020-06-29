@@ -10,3 +10,28 @@ h1, h2, h3, h4, h5, h6, ul {
     @include lg(max-width, rem(930));
     @include xl(max-width, rem(1110));
 }
+*{
+    box-sizing: border-box;
+}
+body {
+    font-size: calc(0.26vw + 0.3125rem);
+}
+button {
+    display: block;
+    cursor: pointer;
+    outline: none;
+}
+a, input {
+    outline: none;
+}
+img {
+    width: 100%;
+}
+.container{
+    max-width: 1195px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
