@@ -1,27 +1,55 @@
+.homepage {
+    margin-bottom: 18em;
+    display: flex;
+    flex-wrap: wrap;
+    @media(max-width: 690px) {
+        margin-bottom: 9em;
+    }
+}
 .hero {
     position: relative;
+    width: 100%;
+    margin-bottom: 16em;
 }
 .hero__avatar {
+    z-index: -1;
     width: calc(100% - 10em);
-    padding-top: 82%;
+    transform: translate(8.7em);
+    padding-top: 58%;
     margin-left: auto;
     background-color: #96bece;
+    @media(max-width: 1360px) {
+        transform: translate(0);
+    }
+    @media(max-width: 690px) {
+        width: 100%;
+    }
 }
 .search-wrapper {
     margin-top: 5em;
-    background: #ffffff;
+    @media(max-width: 690px) {
+        display: none;
+    }
 }
 .hero__title {
     position: absolute;
+    z-index: 1;
     top: 15em;
     left: 0;
+    @media(max-width: 690px) {
+        top: 7em;
+    }
 }
 .hero__info {
     display: flex;
     align-items: center;
     position: absolute;
-    right: 0;
+    z-index: 1;
+    right: -8.7em;
     bottom: 0;
+    @media(max-width: 1360px) {
+        right: 0;
+    }
 }
 .info__btn {
     position: relative;
@@ -44,6 +72,9 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    @media(max-width: 690px) {
+        display: none;
+    }
 }
 .scroll-down__title {
     transform: rotate(180deg);
@@ -57,4 +88,55 @@
     img {
         width: auto;
     }
+}
+.company {
+    width: 50%;
+    padding-top: 2em;
+    @media(max-width: 690px) {
+        width: 100%;
+    }
+}
+.company__title {
+    margin-bottom: 7em;
+}
+.company__description {
+    max-width: 53em;
+    margin-bottom: 4em;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @media(max-width: 690px) {
+        max-width: none;
+    }
+}
+.statistic {
+    display: flex;
+    flex-wrap: wrap;
+    width: 37%;
+    margin-left: auto;
+    margin-right: auto;
+    @media(max-width: 690px) {
+        width: 100%;
+    }
+}
+.statistic__item {
+    position: relative;
+    width: 50%;
+    padding-top: 50%;
+    @media(max-width: 690px) {
+        width: 25%;
+        padding-top: 25%;
+    }
+}
+.statistic__item-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f6f5f4;
 }

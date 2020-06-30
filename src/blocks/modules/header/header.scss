@@ -2,9 +2,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media(max-width: 690px) {
+        position: relative;
+    }
 }
 .header__logo {
     max-width: 11em;
+    @media(max-width: 690px) {
+        display: none;
+    }
 }
 .menu {
     display: flex;
@@ -13,10 +19,16 @@
     max-width: 45.4em;
     margin: 4em 0;
     padding-left: 0;
+    @media(max-width: 690px) {
+        display: none;
+    }
 }
 .buttons {
     display: flex;
     align-items: center;
+    @media(max-width: 690px) {
+        display: none;
+    }
 }
 .menu__item {
   
@@ -33,4 +45,41 @@
 .buttons__btn-started {
     background-color: #ffcc01;
     border-radius: 8px;
+}
+.burger-menu {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    top: 20px;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+    padding-top: 7px;
+    cursor: pointer;
+    ::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #ffffff;
+    }
+    ::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #ffffff;
+    }
+    div {
+        width: 100%;
+        height: 1px;
+        background-color: #ffffff;
+    }
+    @media(max-width: 690px) {
+        display: block;
+    }
 }
